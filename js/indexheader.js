@@ -9,13 +9,7 @@ function getActivePage() {
     if (path.includes('about')) return 'about';
     if (path.includes('service')) return 'service';
     if (path.includes('blog')) return 'blog';
-    if (path.includes('como')) return 'blog';
-    if (path.includes('entenda')) return 'blog';
-    if (path.includes('juros')) return 'blog';
-    if (path.includes('motivos')) return 'blog';
     if (path.includes('contact')) return 'contact';
-    if (path.includes('lgpd')) return 'terms';
-    if (path.includes('policy')) return 'terms';
     return '';
 }
 
@@ -50,11 +44,6 @@ function loadHeader(activePage) { // Recebe activePage como parâmetro
             subtitle1 = 'Contato';
             subtitle2 = 'Canais';
             break;
-        case 'terms':
-            title = 'Termos de uso';
-            subtitle1 = 'Informação';
-            subtitle2 = 'Site';
-            break;
         default:
             title = 'Facilita Assessoria Financeira';
             subtitle1 = 'Home';
@@ -75,7 +64,6 @@ function loadHeader(activePage) { // Recebe activePage como parâmetro
 
     const headerHTML = `
         <!-- Topbar Start -->
-
                 <div id="topbar" class="container-fluid bg-secondary px-5 d-none d-lg-block ">
                     <div class="row gx-0">
                         <div class="col-lg-12 text-center text-lg-start mb-2 mb-lg-0">
@@ -167,18 +155,80 @@ function loadHeader(activePage) { // Recebe activePage como parâmetro
                 </div>
             </nav>
 
-        <!-- TÍTULO AQUI -->
-        <div class="container-fluid bg-dark py-5 bg-header" style="margin-bottom: 90px;">
-            <div class="row py-5">
-                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                    <h1 class="display-4 text-white animated zoomIn">${title}</h1>
-                    <a href="index.html" class="h5 text-white">${subtitle1}</a>
-                    <i class="far fa-circle text-white px-2"></i>
-                    <a href="${activePage}.html" class="h5 text-white">${subtitle2}</a>
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Não complica...</h5>
+                                <h1 class="display-1 text-white mb-md-4 animated zoomIn">
+                                    <i>... facilita!</i>
+                                </h1>
+                                <a href="https://wa.me/554833809837"
+                                    class="btn btn-warning py-md-3 px-md-5 me-3 animated slideInLeft"
+                                    target="_blank">Análise Gratuita</a>
+                                <a href="https://wa.me/554833809837"
+                                    class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight" target="_blank">
+                                    Atendimento via WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Refinanciamento de
+                                    parcelas
+                                    em atraso</h5>
+                                <h1 class="display-1 text-white mb-md-4 animated zoomIn">Até 80% de desconto</h1>
+                                <a href="https://wa.me/554833809837" target="_blank"
+                                    class="btn btn-warning py-md-3 px-md-5 me-3 animated slideInLeft">Análise
+                                    Gratuita</a>
+                                <a href="https://wa.me/554833809837" target="_blank"
+                                    class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Mande um
+                                    WhatsApp para a gente!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/blog-3.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Suporte Jurídico</h5>
+                                <h1 class="display-1 text-white mb-md-4 animated zoomIn">Juros abusivos?</h1>
+                                <a href="https://wa.me/554833809837" target="_blank"
+                                    class="btn btn-warning py-md-3 px-md-5 me-3 animated slideInLeft">Reduza agora!</a>
+                                <a href="https://wa.me/554833809837" target="_blank"
+                                    class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Atendemos via WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/blog-1.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Refinanciamento</h5>
+                                <h1 class="display-1 text-white mb-md-4 animated zoomIn">Bloqueio por Renajud</h1>
+                                <a href="https://wa.me/554833809837" target="_blank"
+                                    class="btn btn-warning py-md-3 px-md-5 me-3 animated slideInLeft">Remova agora</a>
+                                <a href="https://wa.me/554833809837" target="_blank"
+                                    class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Garanta valores justos</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Slide Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo </span>
+                </button>
             </div>
-        </div>
-        <!-- TÍTULO AQUI -->
 
         </div>
         <!-- Navbar End-->

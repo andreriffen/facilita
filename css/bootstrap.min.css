@@ -3398,15 +3398,15 @@ iframe {
 }
 
 .text-warning {
-    color: #fbd752
+    color: #fbd752 !important
 }
 
 .text-light {
-    color: #eef9ff
+    color: #eef9ff !important
 }
 
 .text-dark {
-    color: #001348
+    color: #001348 !important
 }
 
 .text-white {
@@ -3438,7 +3438,7 @@ iframe {
 }
 
 .bg-warning {
-    background-color: #ffc107
+    background-color: #ffc107 !important
 }
 
 .bg-light {
@@ -3458,7 +3458,7 @@ iframe {
 }
 
 .rounded {
-    border-radius: 15px
+    border-radius: 15px !important
 }
 
 .rounded-0 {

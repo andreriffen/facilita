@@ -176,7 +176,7 @@ marquee>small {
 
 .btn-primary,
 .btn-secondary {
-    color: #FFFFFF;
+    color: #fbd752;
     box-shadow: inset 0 0 0 50px transparent;
 }
 
@@ -455,7 +455,7 @@ marquee>small {
     align-items: center;
     justify-content: center;
     background: var(--primary);
-    border-radius: 2px;
+    border-radius: 15px;
     transform: rotate(-45deg);
 }
 
