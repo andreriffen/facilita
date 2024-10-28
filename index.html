@@ -47,7 +47,7 @@
 
     <main>
 
-        <section><!-- Numbers -->
+       <section><!-- Numbers -->
 
             <div class="container-fluid facts pt-3 pt-lg-0">
                 <div class="container py-5 pt-lg-0">
@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="ps-4">
                                     <h5 class="mb-0 text-light">Clientes</h5>
-                                    <h1 class="mb-0 text-light" data-toggle="counter-up">5000</h1>
+                                    <h1 class="mb-0 text-light" ><!-- data-toggle="counter-up" -->5000</h1>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +75,36 @@
                                 <div class="ps-4">
                                     <!-- <h5 class="text-dark mb-0">Acordos</h5> -->
                                     <h5 class="text-dark mb-0">Mais de </h5>
-                                    <h1 class="mb-0 " data-toggle="counter-up">100</h1>
+                                    <h1 class="mb-0 ">100</h1>
+                                    <!--  data-toggle="counter-up" -->
+                                    <!-- Esses erros parecem estar relacionados a problemas com o uso das bibliotecas owl.carousel e counterup, juntamente com o jQuery. -->
+                                    <!-- Uncaught TypeError: a(...).addClass(...) is not a function
+                                            at e.initialize (owl.carousel.min.js:7:4384)
+                                            at e.<anonymous> (owl.carousel.min.js:7:3415)
+                                            at HTMLDivElement.i (jquery-3.4.1.min.js:2:87485)
+                                            at HTMLDivElement.dispatch (jquery-3.4.1.min.js:2:42571)
+                                            at v.handle (jquery-3.4.1.min.js:2:40572)
+                                            at Object.trigger (jquery-3.4.1.min.js:2:70627)
+                                            at HTMLDivElement.<anonymous> (jquery-3.4.1.min.js:2:71222)
+                                            at Function.each (jquery-3.4.1.min.js:2:2777)
+                                            at k.fn.init.each (jquery-3.4.1.min.js:2:2149)
+                                            at k.fn.init.trigger (jquery-3.4.1.min.js:2:71198)
+
+                                        Uncaught TypeError: $this is not a function
+                                            at f (counterup.min.js:11:1176)
+
+                                        Uncaught TypeError: Cannot read properties of undefined (reading 'toggleClass')
+                                            at e.draw (owl.carousel.min.js:7:6388)
+                                            at e.<anonymous> (owl.carousel.min.js:7:3264)
+                                            at HTMLDivElement.i (jquery-3.4.1.min.js:2:87485)
+                                            at HTMLDivElement.dispatch (jquery-3.4.1.min.js:2:42571)
+                                            at v.handle (jquery-3.4.1.min.js:2:40572)
+                                            at Object.trigger (jquery-3.4.1.min.js:2:70627)
+                                            at HTMLDivElement.<anonymous> (jquery-3.4.1.min.js:2:71222)
+                                            at Function.each (jquery-3.4.1.min.js:2:2777)
+                                            at k.fn.init.each (jquery-3.4.1.min.js:2:2149)
+                                            at k.fn.init.trigger (jquery-3.4.1.min.js:2:71198)
+                                        -->
                                     <h5 class="text-dark">acordos/mês</h5>
                                 </div>
                             </div>
@@ -89,7 +118,7 @@
                                 </div>
                                 <div class="ps-4">
                                     <h5 class="text-white mb-0">Equipe</h5>
-                                    <h1 class="text-white mb-0" data-toggle="counter-up">25</h1>
+                                    <h1 class="text-white mb-0" ><!-- data-toggle="counter-up" -->25</h1>
                                     <h5 class="text-white">Profissionais</h5>
                                 </div>
                             </div>
