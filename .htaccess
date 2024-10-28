@@ -1,0 +1,11 @@
+# Ativa o módulo de reescrita
+RewriteEngine On
+
+# Redireciona URLs com extensão .html para URLs sem a extensão (SEO-friendly)
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Reescreve URLs sem extensão para carregar arquivos .html correspondentes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*?)/?$ $1.html [L]

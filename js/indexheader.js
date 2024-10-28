@@ -45,7 +45,7 @@ function loadHeader(activePage) { // Recebe activePage como parâmetro
             subtitle2 = 'Canais';
             break;
         default:
-            title = 'Facilita Assessoria Financeira';
+            title = 'Assessoria Facilita Financeira';
             subtitle1 = 'Home';
             subtitle2 = '';
             break;
@@ -96,10 +96,10 @@ function loadHeader(activePage) { // Recebe activePage como parâmetro
                                     </small>
                                     <small>
                                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                        <a href="#" aria-label="FACILITA ASSESSORIA JURIDICA - A maior especialista em negociação de dívidas
+                                        <a href="#" aria-label="Assessoria Facilita JURIDICA - A maior especialista em negociação de dívidas
                                         bancárias do Brasil. CNPJ: 54.906.530/0001-22"
                                             style="text-decoration: none; color: #001348;">
-                                            &copy; FACILITA ASSESSORIA JURIDICA - A maior especialista em negociação de dívidas
+                                            &copy; Assessoria Facilita JURIDICA - A maior especialista em negociação de dívidas
                                             bancárias do Brasil. CNPJ: 54.906.530/0001-22</a>
                                     </small>
                                 </marquee>
@@ -114,7 +114,7 @@ function loadHeader(activePage) { // Recebe activePage como parâmetro
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
                 <div id="brand">
-                    <a href="index.html" class="navbar-brand p-0">
+                    <a href="index" class="navbar-brand p-0">
                         <h1 class="mt-4">
                             <svg xmlns="http://www.w3.org/2000/svg" id="logo-facilita" width="50" height="50"
                                 viewBox="0 -1 25 27" fill="currentColor" stroke="none" stroke-width="1"
@@ -126,8 +126,9 @@ function loadHeader(activePage) { // Recebe activePage como parâmetro
                                 <rect width="5" height="5" x="15.5" y="-3" rx="1" transform="rotate(45)" />
                                 <rect width="5" height="5" x="22" y="3.5" rx="1" transform="rotate(45)" />
                             </svg>
-                            <b style="font-family: 'Bebas Neue'; font-weight: 400;">FACILITA</b>
                             <b style="font-family: 'Bebas Neue'; font-weight: 400; letter-spacing: 0.1rem;">ASSESSORIA</b>
+                            <b style="font-family: 'Bebas Neue'; font-weight: 400;">FACILITA</b>
+                            
                         </h1>
                     </a>
                 </div>
@@ -137,20 +138,20 @@ function loadHeader(activePage) { // Recebe activePage como parâmetro
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-3">
-                        <a href="index.html" class="nav-item nav-link ${activePage === 'home' ? 'active' : ''}">Home</a>
-                        <a href="about.html" class="nav-item nav-link ${activePage === 'about' ? 'active' : ''}">Sobre</a>
+                        <a href="index" class="nav-item nav-link ${activePage === 'home' ? 'active' : ''}">Home</a>
+                        <a href="about" class="nav-item nav-link ${activePage === 'about' ? 'active' : ''}">Sobre</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle ${activePage === 'service' ? 'active' : ''}" data-bs-toggle="dropdown">Serviços</a>
                             <div class="dropdown-menu m-0">
-                                <a href="service.html#especialidades" class="dropdown-item">Especialidades</a>
-                                <a href="service.html#negociacao-amigavel" class="dropdown-item">Negociação Amigável</a>
-                                <a href="service.html#negociacao-judicial" class="dropdown-item">Negociação Jurídica</a>
-                                <a href="service.html#limpa-nome" class="dropdown-item">Limpa Nome</a>
-                                <a href="service.html#representacao-juridica" class="dropdown-item">Representação jurídica</a>
+                                <a href="service#especialidades" class="dropdown-item">Especialidades</a>
+                                <a href="service#negociacao-amigavel" class="dropdown-item">Negociação Amigável</a>
+                                <a href="service#negociacao-judicial" class="dropdown-item">Negociação Jurídica</a>
+                                <a href="service#limpa-nome" class="dropdown-item">Limpa Nome</a>
+                                <a href="service#representacao-juridica" class="dropdown-item">Representação jurídica</a>
                             </div>
                         </div>
-                        <a href="blog.html" class="nav-item nav-link ${activePage === 'blog' ? 'active' : ''}">Blog</a>
-                        <a href="contact.html" class="nav-item nav-link ${activePage === 'contact' ? 'active' : ''}">Contato</a>
+                        <a href="blog" class="nav-item nav-link ${activePage === 'blog' ? 'active' : ''}">Blog</a>
+                        <a href="contact" class="nav-item nav-link ${activePage === 'contact' ? 'active' : ''}">Contato</a>
                     </div>
                 </div>
             </nav>

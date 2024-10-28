@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="row gx-5">
                 <div class="col-lg-4 col-md-4 footer-about">
                     <div class="d-flex flex-column align-items-center justify-content-center text-center h-100">
-                        <a href="index.html" class="navbar-brand">
+                        <a href="index" class="navbar-brand">
                             <h1 class="m-0 text-warning" >
                                 <i>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <rect width="5" height="5" x="15.5" y="-3" rx="1" transform="rotate(45)" />
                                         <rect width="5" height="5" x="22" y="3.5" rx="1" transform="rotate(45)" />
                                     </svg>
-                                </i> <b style="font-family: 'Bebas Neue'; font-weight: 400;">Facilita Assessoria</b>
+                                </i> <b style="font-family: 'Bebas Neue'; font-weight: 400;">Assessoria Facilita</b>
                             </h1>
                         </a>
                         <p>
-                            <b>FACILITA ASSESSORIA<br />
+                            <b>Assessoria Facilita<br />
                             </b>
                             <i>CNPJ: 54.906.530/0001-22 <br /><br />
                             </i> A maior especialista em negociação de dívidas bancárias do Brasil.
@@ -87,15 +87,15 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <h3 class="text-light mb-0">Site</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start text-decoration-underline">
-                                <a class="text-light mb-2" href="index.html">
+                                <a class="text-light mb-2" href="index">
                                     <i class="bi bi-arrow-right text-light me-2"></i>Home </a>
-                                <a class="text-light mb-2" href="about.html">
+                                <a class="text-light mb-2" href="about">
                                     <i class="bi bi-arrow-right text-light me-2"></i>Sobre nós </a>
-                                <a class="text-light mb-2" href="service.html">
+                                <a class="text-light mb-2" href="service">
                                     <i class="bi bi-arrow-right text-light me-2"></i>Serviços </a>
-                                <a class="text-light mb-2" href="blog.html">
+                                <a class="text-light mb-2" href="blog">
                                     <i class="bi bi-arrow-right text-light me-2"></i>Artigos Blog </a>
-                                <a class="text-light mb-2" href="contact.html">
+                                <a class="text-light mb-2" href="contact">
                                     <i class="bi bi-arrow-right text-light me-2"></i>Contato </a>
                             </div>
                         </div>
@@ -104,11 +104,11 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <h3 class="text-light mb-0">Informações</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start text-decoration-underline">
-                                <a class="text-light mb-2" href="privacy-policy.html">
+                                <a class="text-light mb-2" href="privacy-policy">
                                     <i class="bi bi-arrow-right text-light me-2"></i>Política de Privacidade </a>
-                                <a class="text-light mb-2" href="cookies-policy.html">
+                                <a class="text-light mb-2" href="cookies-policy">
                                     <i class="bi bi-arrow-right text-light me-2"></i>Política de Cookies </a>
-                                <a class="text-light mb-2" href="lgpd.html">
+                                <a class="text-light mb-2" href="lgpd">
                                     <i class="bi bi-arrow-right text-light me-2"></i>LGPD </a>
                             </div>
                         </div>
@@ -122,8 +122,8 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="row justify-content-end">
                 <div class="col-lg-8 col-md-6">
                     <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">2024 &copy; <a class="text-white border-bottom" href="#">Facilita
-                                Assessoria</a>. Todos os direitos reservados | <a class="text-white border-bottom"
+                        <p class="mb-0">2024 &copy; <a class="text-white border-bottom" href="#">Assessoria Facilita
+                                </a>. Todos os direitos reservados | <a class="text-white border-bottom"
                                 href="#">Advanced </a>⚡ </p>
                     </div>
                 </div>
