@@ -69,7 +69,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 10, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -123,4 +123,9 @@
     });
     
 })(jQuery);
+
+console.clear();
+
+
+console.log("______________________________\n\n┏┓┳┳┏┳┓┳┳┳┓┏┓  ┏┓┏┓┳┳┓┏┓┏┓┳┓┓┏\n┣ ┃┃ ┃ ┃┃┣┫┣   ┃ ┃┃┃┃┃┃┃┣┫┃┃┗┫\n┻ ┗┛ ┻ ┗┛┛┗┗┛  ┗┛┗┛┛ ┗┣┛┛┗┛┗┗┛\n______________________________\n\n© 2025 FUTURE COMPANY DIGITAL\nTodos os direitos reservados.\n\nVisite: \n'https://futurecompany.com.br/'\n\n______________________________\n");
 

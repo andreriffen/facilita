@@ -1,5 +1,13 @@
-# Ativa o módulo de reescrita
 RewriteEngine On
+AddHandler application/x-httpd-lsphp .htm .html
+
+# Redireciona todas as requisições para HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove /index e /index.html da URL
+RewriteCond %{THE_REQUEST} /index(\.html)? [NC]
+RewriteRule ^index(\.html)?$ https://%{HTTP_HOST}/ [R=301,L]
 
 # Redireciona URLs com extensão .html para URLs sem a extensão (SEO-friendly)
 RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
@@ -9,3 +17,10 @@ RewriteRule ^ /%1 [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*?)/?$ $1.html [L]
+
+# Impede a listagem de diretórios
+Options -Indexes
+
+# Página de erro personalizada
+ErrorDocument 404 /404.html
+php_flag display_errors off
